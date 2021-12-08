@@ -1,0 +1,45 @@
+import turtle
+
+t = turtle.Turtle()
+t.left(90)
+
+def main(Blen = 40):
+    while Blen > 30:
+        t.speed(150)
+        t.color('red')
+        t.forward(Blen)
+        Blen = Blen - 10
+        t.right(20)
+        t.forward(Blen)
+        t.right(20)
+        branch()
+        t.right(140)
+        branch()
+        t.right(20)
+        t.forward(Blen)
+        t.right(140)
+        t.forward(Blen)
+        t.left(20)
+        branch()
+        t.left(140)
+        branch()
+        t.left(20)
+        t.forward(Blen)
+        t.right(20)
+        t.forward(40)
+        
+def branch():
+    t.color('green')
+    t.forward(20)
+    t.right(20)
+    t.forward(10)
+    t.right(180)
+    t.forward(10)
+    t.right(140)
+    t.forward(10)
+    t.right(180)
+    t.forward(10)
+    t.right(20)
+    t.forward(20)
+    
+main()
